@@ -16,7 +16,7 @@ namespace DelegateSample
       
         public void PrintOK(int a, int b)
         {
-            Console.WriteLine(a + 2*b);
+            Console.WriteLine(a + 3*b);
 
         }
     }
@@ -41,8 +41,8 @@ namespace DelegateSample
 
             SuperClass c = new SuperClass();
             SimpleClass s = new SimpleClass();
-            s.a = 6;
-            s.b = 3;
+            s.a = int.Parse(Console.ReadLine());
+            s.b = int.Parse(Console.ReadLine());
             s.pd = c.PrintOK;
             s.PrintOK();
         }
